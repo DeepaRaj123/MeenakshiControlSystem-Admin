@@ -1,0 +1,65 @@
+/**  =====================
+      monthlyReport css start
+==========================  **/
+.caption-monthlyReport{
+	.monthlyReport-header{
+		display:inline-block;
+		span{
+			display: block;
+			font-size: 13px;
+			margin-top: 5px;
+		}
+	}
+}
+
+.front-icon-monthlyReport{
+	.monthlyReport-header{
+		display: inline-block;
+	}
+	.big-icon{
+		display: inline-block;
+		i{
+			font-size: 50px;
+			margin-right: 10px;	
+			color: $primary-color;
+		}
+	}
+	.d-inline-block{
+		span{
+			display: block;
+			font-size: 13px;
+			margin-top: 5px;
+		}
+	}
+}
+
+.primary-monthlyReport{
+	@extend .caption-monthlyReport;
+	background-color: $primary-color;
+	color: #fff;
+	h5,a,.monthlyReport-title li:last-child a,.monthlyReport-item+.monthlyReport-item::before{
+		color: #fff;
+	}
+}
+.inverse-monthlyReport{
+	@extend .primary-monthlyReport;
+	background-color: $inverse-color;
+}
+.danger-monthlyReport{
+	@extend .primary-monthlyReport;
+	background-color: $danger-color;
+}
+.info-monthlyReport{
+	@extend .primary-monthlyReport;
+	background-color: $info-color;
+}
+.warning-monthlyReport{
+	@extend .primary-monthlyReport;
+	background-color: $warning-color;
+}
+.success-monthlyReport{
+	@extend .primary-monthlyReport;
+	background-color: $success-color;
+}
+
+/**====== monthlyReport css end ======**/
